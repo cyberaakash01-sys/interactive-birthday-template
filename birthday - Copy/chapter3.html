@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 💖 | Chapter 3</title>
+    <meta name="description" content="Blow the birthday candles with a special wish!">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="chapter-body">
+
+    <!-- Particle Canvas for Romantic Sparkles, Hearts & Confetti -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Ambient Sound Control -->
+    <button id="musicToggleBtn" class="music-btn" aria-label="Toggle Romantic Music">
+        <span class="music-icon">🎵</span>
+        <span class="music-text">Play Melody</span>
+    </button>
+
+    <!-- FULL SCREEN CAKE & CANDLE OVERLAY (Appears immediately on page open) -->
+    <div class="cake-screen-overlay" id="cakeOverlay">
+
+        <div class="date-badge" style="margin-bottom: 15px;">
+            <span class="heart-sparkle">✨</span>
+            <span class="date-text">Chapter 03 • Make A Wish</span>
+            <span class="heart-sparkle">✨</span>
+        </div>
+
+        <div class="cake-header-title">
+            <h2>Make A Wish 💕</h2>
+            <p>Click on the candle flame to blow it out... 🌬️✨</p>
+        </div>
+
+        <!-- 3D Layered Cake Stage -->
+        <div class="cake-stage">
+            <div class="cake-glow"></div>
+
+            <!-- Candle on top -->
+            <div class="candle-wrapper">
+
+                <!-- CLICKABLE FLAME AREA WITH 'CLICK ME...' BADGE -->
+                <div class="flame-container" id="candleFlameArea" role="button" tabindex="0"
+                    aria-label="Click me to blow candle">
+                    <div class="flame-click-badge">Click me... 🌬️</div>
+                    <div class="flame" id="candleFlame"></div>
+                </div>
+
+                <div class="candle-wick"></div>
+                <div class="candle-stick"></div>
+            </div>
+
+            <!-- Tiered Cake Body -->
+            <div class="cake-structure">
+                <!-- Top Tier -->
+                <div class="cake-tier-top">
+                    <div class="icing-drips-top"></div>
+                    <div class="tier-number-badge">Special Day ✨</div>
+                </div>
+
+                <!-- Bottom Tier -->
+                <div class="cake-tier-bottom">
+                    <div class="icing-drips-bottom"></div>
+                    <div class="cake-decor-stars">💖 • ✨ • 💖</div>
+                </div>
+
+                <!-- Cake Plate -->
+                <div class="cake-plate"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FULL SCREEN ROMANTIC & EMOTIONAL REVELATION SCREEN (Triggers after candle is blown) -->
+    <main class="revelation-screen" id="revelationScreen" aria-live="polite">
+
+        <div class="revelation-card">
+
+            <div class="revelation-crown-box">
+                👑 <span>SPECIAL DAY • BIRTHDAY MILESTONE</span> 👑
+            </div>
+
+            <!-- Main Grand Title -->
+            <h1 class="hero-18th-title">Happy Birthday<br>[Your Name]! 💖 ✨</h1>
+            <p class="hero-18th-subtitle">“Wishing a wonderful year ahead to a very special person.”</p>
+
+            <div class="revelation-divider">🌸 • ✨ • 💖 • ✨ • 🌸</div>
+
+            <!-- Deeply Emotional Message -->
+            <div class="emotional-message-box">
+                <p class="emotional-message-p">
+                    <span class="emotional-highlight">Today is your special birthday! 🎂✨</span><br>
+                    This is a beautiful milestone and a day to celebrate how wonderful you are.(edit this as per your
+                    requirement)
+                </p>
+                <p class="emotional-message-p">
+                    your last msg related to your love and feeling regarding her and wishes for her birthday...
+                </p>
+                <p class="emotional-message-p">
+                    blessings to her... <span class="romantic-heart-glow">Happy
+                        Birthday! 💕🌟</span>
+                </p>
+            </div>
+
+            <!-- Interactive Action Navigation Buttons -->
+            <div class="revelation-actions">
+                <button class="replay-candle-btn" id="replayCandleBtn">
+                    <span>✨ Replay Candle Blow</span>
+                    <span>🎂</span>
+                </button>
+
+                <a href="chapter2.html" class="home-nav-btn">
+                    <span>← Chapter 2</span>
+                </a>
+
+                <a href="main.html" class="home-nav-btn">
+                    <span>← Back to Start 💌</span>
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Chapter 3 Script -->
+    <script src="chapter3.js"></script>
+</body>
+
+</html>

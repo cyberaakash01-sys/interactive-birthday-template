@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Secret Birthday Surprise 🔒 | Enter Code</title>
+    <meta name="description" content="Enter the secret code to unlock the special birthday surprise!">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="chapter-body">
+
+    <!-- Particle Canvas for Romantic Sparkles & Hearts -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Ambient Sound Control -->
+    <button id="musicToggleBtn" class="music-btn" aria-label="Toggle Romantic Music">
+        <span class="music-icon">🎵</span>
+        <span class="music-text">Play Melody</span>
+    </button>
+
+    <!-- Romantic Passcode Gate Card -->
+    <main class="chapter-container login-page-card">
+
+        <!-- Romantic Floating Header / Badge -->
+        <div class="date-badge">
+            <span class="heart-sparkle">🔒</span>
+            <span class="date-text">A little surprise for you</span>
+            <span class="heart-sparkle">✨</span>
+        </div>
+
+        <div class="login-header-box">
+            <div class="lock-icon-wrapper">
+                <span class="animated-lock-emoji">🔐</span>
+            </div>
+            <h1 class="login-title">Enter the secret code ❤️</h1>
+            <p class="login-subtitle">A special 4-digit key crafted just for you... 🌸</p>
+        </div>
+
+        <!-- Secret Passcode Form -->
+        <form id="loginForm" class="passcode-form" autocomplete="off" onsubmit="return false;">
+
+            <div class="passcode-input-wrapper" id="passcodeWrapper">
+                <input type="password" id="passcodeInput" class="passcode-input" placeholder="• • • •" maxlength="4"
+                    inputmode="numeric" pattern="[0-9]*" required aria-label="Enter 4-digit secret code">
+                <button type="button" id="togglePasscodeVisibility" class="toggle-visibility-btn"
+                    aria-label="Toggle code visibility">
+                    👁️
+                </button>
+            </div>
+
+            <!-- Feedback / Error Message Box -->
+            <div id="loginFeedback" class="login-feedback-msg" aria-live="polite"></div>
+
+            <!-- Unlock CTA Button -->
+            <button type="submit" id="unlockBtn" class="next-btn unlock-btn">
+                <span>Unlock</span>
+                <span class="btn-heart-icon">✨ 💖</span>
+            </button>
+        </form>
+
+        <!-- Cute Hint Badge -->
+        <div class="secret-hint-box">
+            <span class="hint-icon">💡</span>
+            <span class="hint-text">Hint: Default passcode is 1234 (Enter DDMM or custom code) 🌸</span>
+        </div>
+
+    </main>
+
+    <!-- Login Gate Script -->
+    <script src="login.js"></script>
+</body>
+
+</html>

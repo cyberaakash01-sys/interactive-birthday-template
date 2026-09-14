@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick One 💖 | Special Birthday Surprise</title>
+    <meta name="description" content="Choose a surprise message for birthday celebration.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="chapter-body">
+
+    <!-- Particle Canvas for Romantic Sparkles & Hearts -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Ambient Sound Control -->
+    <button id="musicToggleBtn" class="music-btn" aria-label="Toggle Romantic Music">
+        <span class="music-icon">🎵</span>
+        <span class="music-text">Play Melody</span>
+    </button>
+
+    <!-- Main Container with Slide-Up Animation -->
+    <main class="chapter-container slide-up-page">
+
+        <div class="date-badge">
+            <span class="heart-sparkle">✨</span>
+            <span class="date-text">Chapter 02 • Choose Your Surprise</span>
+            <span class="heart-sparkle">✨</span>
+        </div>
+
+        <div class="chapter-header-box">
+            <h1 class="chapter-title"><span class="gradient-text">Pick one</span> <span class="emoji">✨</span></h1>
+            <p class="chapter-subtitle">Tap all 3 boxes below to unlock Chapter 3 🌸</p>
+        </div>
+
+        <!-- 3 Horizontal Sections Container -->
+        <div class="pick-sections-wrapper">
+
+            <!-- Section 1 -->
+            <div class="pick-card" id="cardSurprise" role="button" tabindex="0" aria-label="Surprise Gift">
+                <div class="pick-card-content">
+                    <span class="pick-card-title">Surprise gift <span class="emoji">🎁</span></span>
+                </div>
+            </div>
+
+            <!-- Separator 1 -->
+            <div class="section-separator" aria-hidden="true">|</div>
+
+            <!-- Section 2 -->
+            <div class="pick-card" id="cardMessage" role="button" tabindex="0" aria-label="One Message">
+                <div class="pick-card-content">
+                    <span class="pick-card-title">One message <span class="emoji">💌</span></span>
+                </div>
+            </div>
+
+            <!-- Separator 2 -->
+            <div class="section-separator" aria-hidden="true">|</div>
+
+            <!-- Section 3 -->
+            <div class="pick-card" id="cardMore" role="button" tabindex="0" aria-label="One More Thing">
+                <div class="pick-card-content">
+                    <span class="pick-card-title">One more thing <span class="emoji">👀</span></span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Counter Badge -->
+        <div class="unlock-counter-badge" id="unlockCounter">
+            Explore all 3 boxes to unlock Chapter 3 (0/3 unlocked) ✨
+        </div>
+
+        <!-- Navigation Action Links (Chapter 3 button fades in ONLY after 3 cards clicked) -->
+        <div class="bottom-actions-wrapper" style="margin-top: 25px; flex-direction: column; gap: 15px;">
+            <a href="chapter3.html" class="next-btn hidden-next-btn" id="nextBtnChapter2"
+                style="text-decoration: none;">
+                <span>Continue to Chapter 3: Cake & Wish</span>
+                <span class="btn-heart-icon">🎂 ✨</span>
+            </a>
+
+            <div class="nav-back-link">
+                <a href="chapter1.html" class="back-home-btn">← Back to Chapter 1</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Interactive Modals for Each Section -->
+
+    <!-- Modal 1: Surprise Gift -->
+    <div class="letter-modal-overlay" id="modalSurpriseOverlay">
+        <div class="letter-modal-card">
+            <button class="close-modal-btn" id="closeSurpriseBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <div class="modal-crown"><span class="emoji">🎁</span> <span class="emoji">✨</span></div>
+                <h2>Surprise Gift</h2>
+                <div class="sub-date">For My Special Person</div>
+            </div>
+            <div class="modal-body">
+                <p class="sweet-quote">“Quote realted to gift, moments and love.”</p>
+                <div class="modal-text">
+                    Enter your text related to any gift or long distance msg or whatever u want...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: One Message -->
+    <div class="letter-modal-overlay" id="modalMessageOverlay">
+        <div class="letter-modal-card">
+            <button class="close-modal-btn" id="closeMessageBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <div class="modal-crown"><span class="emoji">💌</span> <span class="emoji">💖</span></div>
+                <h2>A Message For You</h2>
+                <div class="sub-date">Straight From The Heart</div>
+            </div>
+            <div class="modal-body">
+                <p class="sweet-quote">“Lovely quote”</p>
+                <div class="modal-text">
+                    Enter your msg here...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: One More Thing -->
+    <div class="letter-modal-overlay" id="modalMoreOverlay">
+        <div class="letter-modal-card">
+            <button class="close-modal-btn" id="closeMoreBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <div class="modal-crown"><span class="emoji">👀</span> <span class="emoji">🌸</span></div>
+                <h2>One More Thing...</h2>
+                <div class="sub-date">Just Before You Go</div>
+            </div>
+            <div class="modal-body">
+                <p class="sweet-quote">“emotional and lovely quote to make her smile”</p>
+                <div class="modal-text">
+                    a little msg for her to make her smile and feel special in her special day...
+                </div>
+                <a href="chapter3.html" class="modal-surprise-box interactive-surprise"
+                    style="margin-top: 20px; text-decoration: none;">
+                    <span class="gift-icon">🎂</span>
+                    <div class="gift-text">
+                        <strong>Ready for the Big Surprise? 🎂</strong>
+                        <p>Go to Chapter 3 & Blow the Candles! 💖</p>
+                    </div>
+                    <div class="surprise-pulse-badge">Open Cake 🍰</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chapter 2 Script -->
+    <script src="chapter2.js"></script>
+</body>
+
+</html>

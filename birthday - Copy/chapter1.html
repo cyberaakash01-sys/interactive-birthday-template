@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before Anything Else... 💝 | Special Birthday Wish</title>
+    <meta name="description" content="A special birthday message.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="chapter-body">
+
+    <!-- Particle Canvas for Romantic Sparkles & Hearts -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Ambient Sound Control -->
+    <button id="musicToggleBtn" class="music-btn" aria-label="Toggle Romantic Music">
+        <span class="music-icon">🎵</span>
+        <span class="music-text">Play Melody</span>
+    </button>
+
+    <!-- Main Container -->
+    <main class="chapter-container">
+
+        <div class="date-badge">
+            <span class="heart-sparkle">✨</span>
+            <span class="date-text">Chapter 01 • From The Heart</span>
+            <span class="heart-sparkle">✨</span>
+        </div>
+
+        <div class="chapter-header-box">
+            <h1 class="chapter-title"><span class="emoji">✨</span> <span class="gradient-text">Before anything
+                    else...</span> <span class="emoji">💝</span></h1>
+            <p class="chapter-subtitle">A little message crafted just for you 🌸</p>
+        </div>
+
+        <!-- 3D Heart-Framed Flip Card -->
+        <div class="flip-card-container" id="flipCardContainer" role="button" tabindex="0" aria-label="Flip Card">
+            <div class="flip-card" id="fancyFlipCard">
+
+                <!-- Card Front (Blank Fancy Card + Centered Prompt) -->
+                <div class="flip-card-front">
+                    <div class="heart-frame-decor">
+                        <span class="corner-heart top-left">💝</span>
+                        <span class="corner-heart top-right">💝</span>
+                        <span class="corner-heart bottom-left">💝</span>
+                        <span class="corner-heart bottom-right">💝</span>
+                        <div class="heart-border-glow"></div>
+                    </div>
+                    <div class="card-front-content">
+                        <p class="tap-prompt-text">👉 Tap to flip & reveal 💖</p>
+                    </div>
+                </div>
+
+                <!-- Card Back (Romantic Message) -->
+                <div class="flip-card-back">
+                    <div class="heart-frame-decor">
+                        <span class="corner-heart top-left">💖</span>
+                        <span class="corner-heart top-right">💖</span>
+                        <span class="corner-heart bottom-left">💖</span>
+                        <span class="corner-heart bottom-right">💖</span>
+                        <div class="heart-border-glow"></div>
+                    </div>
+                    <div class="card-back-content">
+                        <div class="quote-icon">“</div>
+                        <p class="romantic-message-text">
+                            Here is a small, special birthday gift crafted with love just for you to bring a big smile
+                            to your face today!✨ (Edit this with you personal msg)
+                        </p>
+                        <div class="quote-icon">&rdquo;</div>
+                        <div class="card-signature">Crafted with ❤️ for You</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Action Buttons (OUTSIDE THE CARD, AT THE BOTTOM OF THE PAGE) -->
+        <div class="bottom-actions-wrapper">
+            <button class="next-btn hidden-next-btn" id="nextBtnChapter1">
+                <span>Continue to Next Chapter</span>
+                <span class="btn-heart-icon">💖 ✨</span>
+            </button>
+
+            <div class="nav-back-link">
+                <a href="main.html" class="back-home-btn">← Back to Envelope</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Chapter 1 Script -->
+    <script src="chapter1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <script>if (!sessionStorage.getItem('birthday_unlocked')) { window.location.href = 'index.html'; }</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️ | A Special Birthday Wish</title>
+    <meta name="description" content="A special, magical birthday wish crafted with love.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Particle Canvas for Romantic Sparkles & Hearts -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Ambient Sound Control -->
+    <button id="musicToggleBtn" class="music-btn" aria-label="Toggle Romantic Music">
+        <span class="music-icon">🎵</span>
+        <span class="music-text">Play Melody</span>
+    </button>
+
+    <!-- Main Hero Container -->
+    <main class="container">
+
+        <!-- Romantic Floating Header / Badge -->
+        <div class="date-badge">
+            <span class="heart-sparkle">✨</span>
+            <span class="date-text">DD/MM/YYYY • Special Edition</span>
+            <span class="heart-sparkle">✨</span>
+        </div>
+
+        <!-- Initial Animated Message Card -->
+        <div class="message-card glass-panel" id="messageCard">
+            <div class="recipient-tag">Dear <span class="highlight-name">Your Name</span> 💕</div>
+
+            <h1 class="typing-line-1" id="typingLine1">
+                “Hey… this isn't a normal birthday wish.”
+            </h1>
+
+            <p class="typing-line-2" id="typingLine2">
+                “So I made you a little something.”
+            </p>
+
+            <!-- Romantic Photo Frame (Above Envelope) -->
+            <div class="photo-frame-container" id="photoFrameContainer">
+                <div class="photo-frame">
+                    <div class="frame-border-glow"></div>
+                    <div class="photo-wrapper">
+                        <img src="demo_photo.jpg" alt="Birthday Special Photo" id="birthdayPhoto"
+                            class="romantic-photo">
+                    </div>
+                    <div class="photo-badge">
+                        <span class="badge-heart">💖</span>
+                        <span class="badge-text">Your Name</span>
+                        <span class="badge-heart">💖</span>
+                    </div>
+                    <div class="frame-sparkle sparkle-tl">✨</div>
+                    <div class="frame-sparkle sparkle-tr">✨</div>
+                    <div class="frame-sparkle sparkle-bl">🌸</div>
+                    <div class="frame-sparkle sparkle-br">🌸</div>
+                </div>
+            </div>
+
+            <!-- Interactive 3D Envelope Wrapper -->
+            <div class="envelope-container" id="envelopeContainer">
+                <div class="envelope" id="envelope">
+                    <!-- Envelope Flap (Top) -->
+                    <div class="envelope-flap"></div>
+
+                    <!-- Envelope Pocket (Front) -->
+                    <div class="envelope-pocket"></div>
+
+                    <!-- Interactive Center Seal "Open It" Button -->
+                    <button class="wax-seal-btn" id="openBtn" aria-label="Open Birthday Letter">
+                        <span class="seal-heart">❤️</span>
+                        <span class="seal-text">Open It</span>
+                    </button>
+
+                    <!-- Letter Inside Envelope -->
+                    <div class="letter" id="letter">
+                        <div class="letter-stamp">👑</div>
+                        <h2 class="letter-heading">Happy Birthday [Your Name]!</h2>
+                        <div class="letter-divider">🌸 ✨ 🌸</div>
+                        <p class="letter-preview-text">
+                            You bring so much magic and warmth into the world.
+                            This is just the beginning of your special surprise...
+                        </p>
+                        <div class="letter-footer">
+                            <span>DD/MM/YYYY</span>
+                            <span class="letter-signature">Crafted with ❤️</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Opened Letter Modal / Expanded View (Shows up seamlessly when 'Open It' is clicked) -->
+        <div class="letter-modal-overlay" id="letterModal">
+            <div class="letter-modal-card glass-panel">
+                <button class="close-modal-btn" id="closeModalBtn" aria-label="Close letter">&times;</button>
+                <div class="modal-header">
+                    <div class="modal-crown">💖</div>
+                    <h2>Dearest [Your Name],</h2>
+                    <p class="sub-date">DD/MM/YYYY • A Very Happy Birthday</p>
+                </div>
+                <div class="modal-body">
+                    <p class="sweet-quote">“Some people make the world sweeter just by being in it.”</p>
+                    <p class="modal-text">
+                        Hey! ✨ This envelope was just the key to unlocked magic.
+                        Every pixel here was made to put a wide smile on your face today!
+                    </p>
+                    <a href="chapter1.html" class="modal-surprise-box interactive-surprise" id="surpriseTrigger"
+                        aria-label="Open Next Surprise Page">
+                        <span class="gift-icon">🎁</span>
+                        <div class="gift-text">
+                            <strong>More surprises are on the way! ✨</strong>
+                            <p>Click here to open the next chapter 💖</p>
+                        </div>
+                        <div class="surprise-pulse-badge">Click Me 💝</div>
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    <button class="replay-btn" id="replayBtn">✨ Replay Animation</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
