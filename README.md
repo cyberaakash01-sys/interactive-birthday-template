@@ -1,26 +1,50 @@
-# Interactive Birthday Surprise Website 🎂
+# 🎂 Interactive Birthday Surprise Website
 
-A customizable birthday surprise website template built using:
+A customizable interactive birthday surprise website template built using **HTML, CSS and JavaScript**.
+
+Create a personalized birthday experience with animated pages, messages, surprises and interactive elements.
+
+## ✨ Features
+
+- 🎁 Interactive birthday surprise flow
+- 💌 Personalized message sections
+- 🎂 Animated cake and birthday reveal
+- 📸 Photo showcase section
+- 🔐 Simple login/welcome screen
+- 📱 Responsive design for mobile and desktop
+
+## 🛠️ Technologies Used
 
 - HTML
 - CSS
 - JavaScript
 
-## Features ✨
+## 📸 Preview
 
-- Animated birthday pages
-- Interactive chapters
-- Photo memories section
-- Birthday message
-- Surprise reveal animation
+### Web preview
+![Web page](preview/preview.png)
 
-## How to Customize
+### Login page
+![Login page](preview/login_page.jpeg)
 
-1. Replace images
-2. Update names and dates
-3. Edit birthday messages
-4. Deploy on Netlify/GitHub Pages
+### Chapter preview
+![Chapter 1](preview/chapter01.jpeg)
 
-## Demo
+![Chapter 2](preview/chapter02.jpeg)
+
+![Chapter 3](preview/chapter03.jpeg)
+
+## 🚀 How to Customize
+
+1. Replace sample images with your own images
+2. Update name, date and messages
+3. Modify animations and styles
+4. Deploy using Netlify or GitHub Pages
+
+## 🌐 Live Demo
 
 https://birthdayxtemplate.netlify.app
+
+## 📌 Purpose
+
+This project was created as a reusable birthday surprise website template that can be customized for different occasions.
