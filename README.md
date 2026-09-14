@@ -28,10 +28,13 @@ Create a personalized birthday experience with animated pages, messages, surpris
 ![Login page](preview/login_page.png)
 
 ### Chapter preview
+#### Chpater 01
 ![Chapter 1](preview/chapter01.png)
 
+#### Chpater 02
 ![Chapter 2](preview/chapter02.png)
 
+#### Chpater 03
 ![Chapter 3](preview/chapter03.png)
 
 ## 🚀 How to Customize
