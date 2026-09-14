@@ -25,14 +25,14 @@ Create a personalized birthday experience with animated pages, messages, surpris
 ![Web page](preview/preview.png)
 
 ### Login page
-![Login page](preview/login_page.jpeg)
+![Login page](preview/login_page.png)
 
 ### Chapter preview
-![Chapter 1](preview/chapter01.jpeg)
+![Chapter 1](preview/chapter01.png)
 
-![Chapter 2](preview/chapter02.jpeg)
+![Chapter 2](preview/chapter02.png)
 
-![Chapter 3](preview/chapter03.jpeg)
+![Chapter 3](preview/chapter03.png)
 
 ## 🚀 How to Customize
 
