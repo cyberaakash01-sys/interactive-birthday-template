@@ -51,3 +51,7 @@ https://birthdayxtemplate.netlify.app
 ## 📌 Purpose
 
 This project was created as a reusable birthday surprise website template that can be customized for different occasions.
+
+## Author
+
+Aakash Samai
